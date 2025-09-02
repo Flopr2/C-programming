@@ -2,7 +2,7 @@
 hoseo
 <details>
   <summary>
-    1
+    하나 둘 셋 얍!
   </summary>
   2</br> 
   3</br>
