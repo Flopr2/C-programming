@@ -79,13 +79,13 @@ void inventory_in() {
         fgets(name_buffer, sizeof(name_buffer), stdin);
         name_buffer[strcspn(name_buffer, "\n")] = 0;
 
-        printf("  - 입고량: ");
+        printf("입고량: ");
         if (scanf("%d", &in_qty) != 1 || in_qty < 0) {
             while (getchar() != '\n');
             return;
         }
 
-        printf("  - 판매가격: ");
+        printf("판매가격: ");
         if (scanf("%d", &price) != 1 || price <= 0) {
             while (getchar() != '\n');
             return;
@@ -110,7 +110,7 @@ void inventory_out() {
     int id, out_qty, index;
 
     printf("\n--- 2. 판매 메뉴 실행 ---\n");
-    printf("  - 상품ID: ");
+    printf("상품ID: ");
     if (scanf("%d", &id) != 1) {
         printf(" 오류: 상품 ID 입력 오류입니다.\n");
         while (getchar() != '\n');
@@ -125,7 +125,7 @@ void inventory_out() {
         return;
     }
 
-    printf("  - 판매량: ");
+    printf("판매량: ");
     if (scanf("%d", &out_qty) != 1 || out_qty <= 0) {
         printf(" 오류: 판매량은 1 이상이어야 합니다.\n");
         while (getchar() != '\n');
@@ -152,7 +152,7 @@ void view_individual_status() {
     int id, index;
 
     printf("\n--- 3. 개별 상품 정보 실행 ---\n");
-    printf("  - 상품ID: ");
+    printf("상품ID: ");
     if (scanf("%d", &id) != 1) {
         printf(" 오류: 상품 ID 입력 오류입니다.\n");
         while (getchar() != '\n');
@@ -188,7 +188,7 @@ void view_all_status() {
     printf("\n--- 4. 전체 상품 정보 실행 ---\n");
 
     if (product_count == 0) {
-        printf("  - 현재 등록된 상품이 없습니다.\n");
+        printf("현재 등록된 상품이 없습니다.\n");
         return;
     }
 
@@ -262,8 +262,6 @@ int main() {
         case 5:
             printf(" 프로그램을 종료합니다.\n");
             return 0;
-        default:
-            printf(" 잘못된 메뉴 선택입니다. 1부터 5까지의 숫자를 입력해주세요.\n");
         }
     }
 
