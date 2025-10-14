@@ -30,7 +30,7 @@ void inventory_in() {
     int id, in_qty, price, index;
     char name_buffer[100];
 
-    printf("  - 상품ID: ");
+    printf("상품ID: ");
     if (scanf("%d", &id) != 1) {
         printf("오류: 상품 ID 입력 오류입니다.\n");
         while (getchar() != '\n');
@@ -74,7 +74,7 @@ void inventory_in() {
         }
 
         printf("새로운 상품을 등록합니다.\n");
-        printf("  - 상품명: ");
+        printf("상품명: ");
         fgets(name_buffer, sizeof(name_buffer), stdin);
         name_buffer[strcspn(name_buffer, "\n")] = 0;
 
