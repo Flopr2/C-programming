@@ -30,7 +30,6 @@ void inventory_in() {
     int id, in_qty, price, index;
     char name_buffer[100];
 
-    printf("\n--- 1. 입고 메뉴 실행 ---\n");
     printf("  - 상품ID: ");
     if (scanf("%d", &id) != 1) {
         printf("오류: 상품 ID 입력 오류입니다.\n");
@@ -109,7 +108,6 @@ void inventory_in() {
 void inventory_out() {
     int id, out_qty, index;
 
-    printf("\n--- 2. 판매 메뉴 실행 ---\n");
     printf("상품ID: ");
     if (scanf("%d", &id) != 1) {
         printf(" 오류: 상품 ID 입력 오류입니다.\n");
@@ -185,7 +183,6 @@ void view_individual_status() {
 }
 
 void view_all_status() {
-    printf("\n--- 4. 전체 상품 정보 실행 ---\n");
 
     if (product_count == 0) {
         printf("현재 등록된 상품이 없습니다.\n");
@@ -197,7 +194,6 @@ void view_all_status() {
     long total_sales_amount = 0;
     int active_count = 0;
 
-    printf("\n================= [ 전체 상품 현황 ] =================");
     for (int i = 0; i < MAX_PRODUCTS; i++) {
         if (products[i].is_active) {
             Product p = products[i];
@@ -223,7 +219,6 @@ void view_all_status() {
 
     printf("\n 총계: 등록 상품 %d개, 총 현재 재고 %ld개, 누적 총 판매량 %ld개, 누적 총 판매금액 %ld원\n",
         product_count, total_stock, total_sales_quantity, total_sales_amount);
-    printf("==================================================\n");
 }
 
 int main() {
