@@ -2,9 +2,9 @@
 ## Hoseo C언어 과제
 <details>
   <summary>
-    하나 둘 셋 얍!
+   파일정리
   </summary>
-  2</br> 
-  3</br>
-  4
+  AI R(AI 리팩터링)</br> 
+  Week(프로젝트)</br>
+  R(직접 리팩터링)
 </details>
