@@ -2,13 +2,13 @@
 
 int main()
 {
-	int arr; //»óÇ°¼ö
-	int stock[100]; //ÀÔ°í¼ö·®
-	int sell[100]; //ÆÇ¸Å¼ö·®
-	int id; //»óÇ°¾ÆÀÌµğ
+	int arr; //ìƒí’ˆìˆ˜
+	int stock[100]; //ì…ê³ ìˆ˜ëŸ‰
+	int sell[100]; //íŒë§¤ìˆ˜ëŸ‰
+	int id; //ìƒí’ˆì•„ì´ë””
 	int in[100];
 
-	printf("»óÇ° °³¼ö : ");
+	printf("ìƒí’ˆ ê°œìˆ˜ : ");
 	scanf_s("%d",&arr);
 
 	for (int i = 0;i < arr; i++) {
